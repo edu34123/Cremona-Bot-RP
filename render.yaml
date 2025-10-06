@@ -10,3 +10,6 @@ services:
         value: your_bot_token_here
       - key: PYTHON_VERSION
         value: 3.11.0
+    ports:
+      - port: 1000
+        protocol: HTTP
