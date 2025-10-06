@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cremona-rp-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: DISCORD_TOKEN
+        value: your_bot_token_here
+      - key: PYTHON_VERSION
+        value: 3.11.0
